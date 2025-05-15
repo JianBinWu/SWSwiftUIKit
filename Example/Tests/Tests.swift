@@ -1,5 +1,4 @@
 import XCTest
-import SWSwiftUIKit
 
 class Tests: XCTestCase {
     

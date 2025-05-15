@@ -1,0 +1,23 @@
+PODS:
+  - SwiftUIIntrospect (1.3.0)
+  - SWSwiftUIKit (0.1.0):
+    - SwiftUIIntrospect (~> 1.3.0)
+
+DEPENDENCIES:
+  - SWSwiftUIKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftUIIntrospect
+
+EXTERNAL SOURCES:
+  SWSwiftUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftUIIntrospect: fee9aa07293ee280373a591e1824e8ddc869ba5d
+  SWSwiftUIKit: 273cdb719997baa732f3439175de7c7201e8e9ee
+
+PODFILE CHECKSUM: 0a29c69a72f8dcda20004edbb52fe911cf3b3c48
+
+COCOAPODS: 1.16.2

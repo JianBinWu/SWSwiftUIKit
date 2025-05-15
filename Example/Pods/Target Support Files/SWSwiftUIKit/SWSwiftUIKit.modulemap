@@ -1,0 +1,6 @@
+framework module SWSwiftUIKit {
+  umbrella header "SWSwiftUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
