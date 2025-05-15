@@ -31,15 +31,6 @@ public struct SWCarouselView<Content: View>: View {
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                         }
                     }
-                    .simultaneousGesture(
-                        DragGesture()
-                            .onChanged({ _ in
-                                viewModel.stopTimer()
-                            })
-                            .onEnded({ _ in
-                                viewModel.startTimer()
-                            })
-                    )
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             }

@@ -12,7 +12,7 @@ import SwiftUI
 public class SWCarouselViewModel: ObservableObject {
     public var timerInterval: TimeInterval {
         didSet {
-            restartTimeer()
+            restartTimer()
         }
     }
     public var itemCount: Int
@@ -33,7 +33,7 @@ public class SWCarouselViewModel: ObservableObject {
         }.store(in: &cancellables)
     }
     
-    func restartTimeer() {
+    func restartTimer() {
         stopTimer()
         startTimer()
     }
