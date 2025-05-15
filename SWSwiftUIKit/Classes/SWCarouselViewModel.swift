@@ -6,37 +6,30 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
 
 public class SWCarouselViewModel: ObservableObject {
-    var timerInterval: TimeInterval {
+    public var timerInterval: TimeInterval {
         didSet {
             restartTimeer()
         }
     }
-    var itemCount: Int
+    public var itemCount: Int
     var timer: Publishers.Autoconnect<Timer.TimerPublisher>!
     var timerCancellable: AnyCancellable?
     var cancellables = Set<AnyCancellable>()
-    @Published var currentIndex: Int = 1 {
-        didSet {
-            let index = currentIndex - 1
-            if index < 0 {
-                realCurrentIndex = itemCount - 1
-            } else if index == itemCount {
-                realCurrentIndex = 0
-            } else {
-                realCurrentIndex = index
-            }
-        }
-    }
-    @Published var realCurrentIndex: Int = 0
+    @Published var currentIndex: Int = 1
+    @Published public var realCurrentIndex: Int = 0
     
-    init(timerInterval: TimeInterval = 5, itemCount: Int) {
+    @MainActor
+    public init(timerInterval: TimeInterval = 5, itemCount: Int) {
         self.timerInterval = timerInterval
         self.itemCount = itemCount
         startTimer()
         $currentIndex.sink {[unowned self] index in
             self.adjustForLooping(currentIndex: index)
+            self.adjustRealCurrentIndex(currentIndex: index)
         }.store(in: &cancellables)
     }
     
@@ -66,6 +59,7 @@ public class SWCarouselViewModel: ObservableObject {
         }
     }
 
+    @MainActor
     func adjustForLooping(currentIndex: Int) {
         if itemCount <= 1 { return }
 
@@ -77,6 +71,17 @@ public class SWCarouselViewModel: ObservableObject {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 self.currentIndex = self.itemCount
             }
+        }
+    }
+    
+    func adjustRealCurrentIndex(currentIndex: Int) {
+        let index = currentIndex - 1
+        if index < 0 {
+            realCurrentIndex = itemCount - 1
+        } else if index == itemCount {
+            realCurrentIndex = 0
+        } else {
+            realCurrentIndex = index
         }
     }
 }

@@ -7,7 +7,6 @@
 
 import Foundation
 
-@MainActor
 public class SWRefreshableScrollViewModel: ObservableObject {
     @Published var canLoadMore: Bool
     @Published public var isNoMoreData = false
