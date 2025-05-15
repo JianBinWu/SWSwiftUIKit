@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SWSwiftUIKit'
   s.version          = '0.1.0'
-  s.summary          = 'some simple component for swiftUI project'
+  s.summary          = 'some simple components for swiftUI project'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ contain carouselView, RefreshView, tabView
                        DESC
 
-  s.homepage         = 'https://github.com/121805186@qq.com/SWSwiftUIKit'
+  s.homepage         = 'https://github.com/JianBinWu/SWSwiftUIKit.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '121805186@qq.com' => '121805186@qq.com' }
-  s.source           = { :git => 'https://github.com/121805186@qq.com/SWSwiftUIKit.git', :tag => s.version.to_s }
+  s.author           = { 'Steven Wu' => '121805186@qq.com' }
+  s.source           = { :git => 'https://github.com/JianBinWu/SWSwiftUIKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '16.0'
 
   s.source_files = 'SWSwiftUIKit/Classes/**/*'
-  s.swift_version = '6.0'
+  s.swift_version = '5.0'
   s.frameworks = 'SwiftUI'
   
   # s.resource_bundles = {
