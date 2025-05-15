@@ -9,7 +9,13 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## 🎥 使用效果演示
+
+![Carousel](Gif/carousel.gif)
+
+![Refresh](Gif/refresh.gif)
+
+![TabView](Gif/tab.gif)
 
 ## Installation
 
