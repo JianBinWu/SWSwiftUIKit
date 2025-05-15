@@ -9,13 +9,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Demonstration
 
-CarouselView
+CarouselView<br>
 ![Carousel](Gif/carousel.gif)
 
-RefreshView
+RefreshView<br>
 ![Refresh](Gif/refresh.gif)
 
-TabView
+TabView<br>
 ![TabView](Gif/tab.gif)
 
 ## Installation
