@@ -1,6 +1,6 @@
 PODS:
   - SwiftUIIntrospect (1.3.0)
-  - SWSwiftUIKit (0.1.0):
+  - SWSwiftUIKit (0.1.1):
     - SwiftUIIntrospect (~> 1.3.0)
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SwiftUIIntrospect: fee9aa07293ee280373a591e1824e8ddc869ba5d
-  SWSwiftUIKit: 22805dcafe0dcb22f86cceb17e5535a286dc921d
+  SWSwiftUIKit: 6c6b075305cc7fc033ec7e17025ce2afa3bd7aca
 
 PODFILE CHECKSUM: 0a29c69a72f8dcda20004edbb52fe911cf3b3c48
 

@@ -1,6 +1,6 @@
 {
   "name": "SWSwiftUIKit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "some simple components for swiftUI project",
   "description": "contain carouselView, RefreshView, tabView",
   "homepage": "https://github.com/JianBinWu/SWSwiftUIKit.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/JianBinWu/SWSwiftUIKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "16.0"
