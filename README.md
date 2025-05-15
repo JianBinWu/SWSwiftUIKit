@@ -22,7 +22,7 @@ pod 'SWSwiftUIKit'
 
 ## Author
 
-121805186@qq.com, 121805186@qq.com
+Steven Wu, 121805186@qq.com
 
 ## License
 
